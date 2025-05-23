@@ -1,0 +1,119 @@
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(to right, rgba(204, 251, 241, 0.5), rgba(248, 250, 252, 0.5));
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroText {
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo {
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo p {
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+}
+
+.contactInfo a {
+  color: var(--gray-700);
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  color: var(--gray-900);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  color: var(--gray-700);
+}
+
+.socialLinks a:hover {
+  color: var(--gray-900);
+}
+
+.heroDescription {
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+}
+
+.availability {
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+.profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .heroContent {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .heroText {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .heroImage {
+    width: 50%;
+  }
+}

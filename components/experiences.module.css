@@ -1,0 +1,81 @@
+.experiences {
+  background: linear-gradient(to bottom right, var(--primary-light), var(--light-bg));
+  padding: 4rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--gray-800);
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceCard {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--primary-color);
+}
+
+.experienceHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.experienceRole {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.experienceCompany {
+  color: var(--gray-600);
+}
+
+.experiencePeriod {
+  color: var(--gray-600);
+  margin-top: 0.5rem;
+}
+
+.experienceTasks {
+  list-style-position: inside;
+  margin-bottom: 0.75rem;
+  color: var(--gray-700);
+}
+
+.experienceTools {
+  color: var(--gray-700);
+  margin-top: 0.75rem;
+}
+
+.toolsLabel {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .experienceHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .experiencePeriod {
+    margin-top: 0;
+  }
+}
